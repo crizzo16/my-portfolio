@@ -1,38 +1,104 @@
+:root {
+  --main-back: teal;
+  --main-text: white;
+  --accent-back: coral;
+  --accent-text: black;
+}
+
 .App {
   text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frame {
+  border: 3px solid var(--main-back);
+  border-radius: 8px;
+  margin: 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation-sub {
+  background: var(--accent-back);
+  color: var(--accent-text);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.navigation-sub .item {
+  width: 100%;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-sub .item:hover {
+  background: var(--main-back);
+  color: var(--main-text);
+}
+
+.page-header {
+  background: teal;
   color: white;
+  box-shadow: 0 8px 6px -6px black;
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+.page-header h2 {margin: 0; padding: 16px; font-size: 48px;
+  }
+
+.content {
+  padding: 24px;
+  min-height: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-project {
+  background: var(--main-back);
+  color: var(--main-text);
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid white;
+  margin: 4px 16px;
+  font-size: 16px;
+}
+
+.btn-project:hover {
+  background: var(--main-text);
+  color: var(--main-back);
+  border: 1px solid var(--main-back)
+}
+
+.mini-projects {
+  border: 2px solid teal;
+  border-radius: 8px;
+  margin: 16px auto;
+  max-width: 600px;
+  min-width: 200px;
+  max-height: 600px;
+  min-height: 200px;
+  padding: 16px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .navigation-sub {
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App {
+    max-width: 90%;
   }
+
+  .page-header h2 {font-size: 24px;}
 }
