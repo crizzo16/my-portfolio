@@ -1,0 +1,13 @@
+.border-magenta {
+    border: 1px solid magenta;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.coin-field {
+    width: 15%;
+    margin: 8px;
+}

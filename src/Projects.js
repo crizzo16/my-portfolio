@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Thumbnail from "./Thumbnail.js"; // Import the Thumbnail component
 import ProjectCard from "./ProjectCard.js";
+import CoinConverter from "./components/dnd-components/CoinConverter.js";
 import "./App.css";
 
 class Projects extends Component {
@@ -15,7 +16,9 @@ class Projects extends Component {
             <ProjectCard title="Coin Converter" />
             <ProjectCard title="Combat Round" />
         </div>
-        <div className="mini-projects"></div>
+        <div className="mini-projects">
+          <CoinConverter />
+        </div>
       </div>
     );
   }
