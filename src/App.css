@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+.flex { display: flex; }
+.f-center { justify-content: center; }
+.f-around { justify-content: space-around; }
+
 .frame {
   border: 3px solid var(--main-back);
   border-radius: 8px;
@@ -51,6 +55,7 @@
 .content {
   padding: 24px;
   min-height: 24px;
+  background-color: white;
 }
 
 .btn-project {
@@ -82,13 +87,26 @@
 
 .about-img {
   width: 100%;
-  max-width: 200px;
+  max-width: 600px;
+  margin: 24px;
   border: 1px solid black;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.spreadsheet-frame {
+  min-width: 320px;
+  width: 90%;
+  height: 60vh;
+}
+
+.content-message {
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 576px) {
