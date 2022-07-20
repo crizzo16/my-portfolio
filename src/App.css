@@ -14,27 +14,34 @@
 .flex { display: flex; }
 .f-center { justify-content: center; }
 .f-around { justify-content: space-around; }
+.f-wrap { flex-wrap: wrap; }
 
 .frame {
-  border: 3px solid var(--main-back);
-  border-radius: 8px;
-  margin: 20px auto;
+  border: 8px solid var(--main-back);
+  border-radius: 16px;
+  margin: 5vh auto;
+  height: 90vh;
+}
+
+.navigation, .page-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .navigation-sub {
-  background: var(--accent-back);
-  color: var(--accent-text);
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
   justify-content: space-around;
+  height: 40px;
 }
 
 .navigation-sub .item {
   width: 100%;
-  padding: 16px;
+  padding: 8px;
   text-decoration: none;
   font-weight: bold;
+  color: black;
 }
 
 .navigation-sub .item:hover {
@@ -47,15 +54,19 @@
   color: white;
   box-shadow: 0 8px 6px -6px black;
   z-index: 10;
+  height: 80px;
 }
 
-.page-header h2 {margin: 0; padding: 16px; font-size: 48px;
+.page-header h2 {margin: 0; padding: 16px; font-size: 46px;
   }
 
 .content {
-  padding: 24px;
-  min-height: 24px;
   background-color: white;
+  overflow-y: scroll;
+  background-color: white;
+  height: calc(90vh - 136px);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;;
 }
 
 .btn-project {
@@ -107,6 +118,44 @@
   max-width: 500px;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  margin: 0 10px;
+}
+
+.big-font {
+  font-size: 24px;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.big-font strong {
+  font-weight: bold;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.about-fun-fact {
+  font-size: 24px;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.fun-fact-header {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+  padding: 8px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.fun-fact-content {
+  margin: 0;
+  padding: 8px;
 }
 
 @media (max-width: 576px) {

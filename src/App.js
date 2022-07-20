@@ -15,12 +15,12 @@ class App extends Component {
               <h2 id="page-title">
                 <Routes>
                   <Route exact path="/" element="Fun Little Things" />
-                  <Route path="/data" element="Beauty in Organization" />
+                  <Route path="/data" element="So. Much. Data." />
                   <Route path="/about" element="I Believe In The Power Of Nice" />
                 </Routes>
               </h2>
             </div>
-            <div className="navigation-sub">
+            <div className="navigation-sub orange">
               <Link to="/" className="item">
                 Projects
               </Link>
