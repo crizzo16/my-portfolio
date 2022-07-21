@@ -14,29 +14,29 @@ class App extends Component {
             <div className="page-header">
               <h2 id="page-title">
                 <Routes>
-                  <Route exact path="/" element="Fun Little Things" />
+                  <Route path="/projects" element="Fun Little Things" />
                   <Route path="/data" element="So. Much. Data." />
-                  <Route path="/about" element="I Believe In The Power Of Nice" />
+                  <Route exact path="/" element="I Believe In The Power Of Nice" />
                 </Routes>
               </h2>
             </div>
             <div className="navigation-sub orange">
-              <Link to="/" className="item">
+              <Link to="/projects" className="item">
                 Projects
               </Link>
               <Link to="/data" className="item">
                 Data &amp; Spreadsheets
               </Link>
-              <Link to="/about" className="item">
+              <Link to="/" className="item">
                 About
               </Link>
             </div>
           </div>
           <div className="content">
             <Routes>
-              <Route exact path="/" element={<Projects />} />
+              <Route exact path="/projects" element={<Projects />} />
               <Route path="/data" element={<Spreadsheets />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/" element={<About />} />
             </Routes>
           </div>
         </div>
