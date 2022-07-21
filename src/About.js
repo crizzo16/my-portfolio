@@ -16,16 +16,12 @@ function About(props) {
             <br></br>
             After university, Celia decided to augment her coding skills with a
             web development course through UC Davis Extension. This help her get
-            in tough with her artistic side, as she really enjoyed the
+            in touch with her artistic side, as she really enjoyed the
             intersection between making a website look great while also being
             well-coded.
             <br />
             <br></br>
-            Outside of coding, Celia enjoys crafting in a variety of disciplines
-            from sewing to using a laser cutter. During the first year of the
-            pandemic, she put this skill to good use creating masks for friends
-            and family. She also deeply enjoys board games and TTRPGs,
-            especially those that allow for cooperative play.
+            Outside of coding, Celia enjoys being creative, whether that's sewing masks or running a D&amp;D game for her friends. Like many others during the pandemic, she discovered that spanding time with friends and family is very important, especially if she can convince them to play a board game or two.
           </p>
         </div>
         <div className="col l5 s12">
