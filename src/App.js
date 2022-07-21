@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <div className="frame">
           <div className="navigation">
-            <div className="page-header">
+            <div className="page-header light-green darken-3">
               <h2 id="page-title">
                 <Routes>
                   <Route path="/projects" element="Fun Little Things" />
@@ -20,7 +20,7 @@ class App extends Component {
                 </Routes>
               </h2>
             </div>
-            <div className="navigation-sub orange">
+            <div className="navigation-sub light-green">
               <Link to="/projects" className="item">
                 Projects
               </Link>

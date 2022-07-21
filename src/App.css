@@ -1,23 +1,21 @@
-:root {
-  --main-back: teal;
-  --main-text: white;
-  --accent-back: coral;
-  --accent-text: black;
-}
-
 .App {
   text-align: center;
   max-width: 70%;
   margin: 0 auto;
 }
 
+.body {
+  background-image: url("%PUBLIC_URL%/assets/rocks.jpeg")
+}
+
 .flex { display: flex; }
 .f-center { justify-content: center; }
+.f-vcenter { align-self: center;}
 .f-around { justify-content: space-around; }
 .f-wrap { flex-wrap: wrap; }
 
 .frame {
-  border: 8px solid var(--main-back);
+  border: 8px solid #558b2f;
   border-radius: 16px;
   margin: 5vh auto;
   height: 90vh;
@@ -45,20 +43,22 @@
 }
 
 .navigation-sub .item:hover {
-  background: var(--main-back);
-  color: var(--main-text);
+  background: #558b2f;
+  color: white;
 }
 
 .page-header {
-  background: teal;
-  color: white;
   box-shadow: 0 8px 6px -6px black;
   z-index: 10;
   height: 80px;
 }
 
-.page-header h2 {margin: 0; padding: 16px; font-size: 46px;
-  }
+.page-header h2 {
+  margin: 0; 
+  padding: 16px; 
+  font-size: 46px;
+  color: white;
+}
 
 .content {
   background-color: white;
@@ -70,8 +70,6 @@
 }
 
 .btn-project {
-  background: var(--main-back);
-  color: var(--main-text);
   padding: 8px;
   border-radius: 8px;
   border: 1px solid white;
@@ -79,14 +77,8 @@
   font-size: 16px;
 }
 
-.btn-project:hover {
-  background: var(--main-text);
-  color: var(--main-back);
-  border: 1px solid var(--main-back)
-}
-
 .mini-projects {
-  border: 2px solid teal;
+  border: 2px solid #558b2f;
   border-radius: 8px;
   margin: 16px auto;
   max-width: 600px;
@@ -99,8 +91,9 @@
 .about-img {
   width: 100%;
   max-width: 600px;
-  margin: 24px;
-  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .row {
@@ -139,7 +132,7 @@
 
 .about-fun-fact {
   font-size: 24px;
-  border: 2px solid #00bcd4;
+  border: 2px solid #558b2f;
   border-radius: 8px;
   padding: 0;
 }
@@ -163,9 +156,11 @@
     flex-wrap: wrap;
   }
 
+  .page-header h2 {font-size: 24px;}
+}
+
+@media (max-width: 768px) {
   .App {
     max-width: 90%;
   }
-
-  .page-header h2 {font-size: 24px;}
 }
