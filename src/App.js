@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Routes, Route, Link, useLocation} from "react-router-dom";
+import { Routes, Route, Link, NavLink, useLocation} from "react-router-dom";
 import Projects from "./Projects.js";
 import Spreadsheets from "./Spreadsheet.js";
 import About from "./About.js";
+import Contact from "./Contact.js";
 
 class App extends Component {
   render() {
@@ -14,29 +15,34 @@ class App extends Component {
             <div className="page-header light-green darken-3">
               <h2 id="page-title">
                 <Routes>
+                  <Route exact path="/" element="I Believe In The Power Of Nice" />
                   <Route path="/projects" element="Fun Little Things" />
                   <Route path="/data" element="So. Much. Data." />
-                  <Route exact path="/" element="I Believe In The Power Of Nice" />
+                  <Route path="/contact" element="Where to Find Me"/>
                 </Routes>
               </h2>
             </div>
             <div className="navigation-sub light-green">
-              <Link to="/projects" className="item">
-                Projects
-              </Link>
-              <Link to="/data" className="item">
-                Data &amp; Spreadsheets
-              </Link>
-              <Link to="/" className="item">
+              <NavLink to="/" className="item">
                 About
-              </Link>
+              </NavLink>
+              <NavLink exact to="/projects" className="item">
+                Projects
+              </NavLink>
+              <NavLink to="/data" className="item">
+                Data &amp; Spreadsheets
+              </NavLink>
+              <NavLink to="/contact" className="item">
+                Contact
+              </NavLink>
             </div>
           </div>
           <div className="content">
             <Routes>
+              <Route path="/" element={<About />} />
               <Route exact path="/projects" element={<Projects />} />
               <Route path="/data" element={<Spreadsheets />} />
-              <Route path="/" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
         </div>
