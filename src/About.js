@@ -21,16 +21,20 @@ function About(props) {
             well-coded.
             <br />
             <br></br>
-            Outside of coding, Celia enjoys being creative, whether that's sewing masks or running a D&amp;D game for her friends. Like many others during the pandemic, she discovered that spending time with friends and family is very important, especially if she can convince them to play a board game or two.
+            Outside of coding, Celia enjoys being creative, whether that's
+            sewing masks or running a D&amp;D game for her friends. Like many
+            others during the pandemic, she discovered that spending time with
+            friends and family is very important, especially if she can convince
+            them to play a board game or two.
           </p>
         </div>
         <div className="col l5 s12 flex f-vcenter">
           <img className="about-img" src="./assets/Celia01.jpeg" />
         </div>
       </div>
-      <div className="row">
-        <div className="col l6 s12">
-        <div className="about-fun-fact">
+      <div className="row mt-lg">
+        <div className="col s12 m6 l3">
+          <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Reading
             </p>
@@ -39,8 +43,8 @@ function About(props) {
             </p>
           </div>
         </div>
-        <div className="col l6 s12">
-        <div className="about-fun-fact">
+        <div className="col l3 m6 s12">
+          <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Watching
             </p>
@@ -49,9 +53,7 @@ function About(props) {
             </p>
           </div>
         </div>
-      </div>
-      <div className="row">
-        <div className="col l6 s12">
+        <div className="col l3 m6 s12">
           <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Playing
@@ -61,7 +63,7 @@ function About(props) {
             </p>
           </div>
         </div>
-        <div className="col l6 s12">
+        <div className="col l3 m6 s12">
           <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Running
