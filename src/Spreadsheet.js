@@ -1,56 +1,72 @@
 import { render } from "@testing-library/react";
 import React, { Component } from "react";
 
-class Spreadsheets extends Component{
-  handleClick = event => {
+class Spreadsheets extends Component {
+  state = {
+    current: 2
+  }
+
+  handleClick2(event) {
     event.preventDefault();
 
-    console.log(event.target.attributes.id);
-    new =event.target.attributes.id;
+    let newSheet = event.target.id;
+    newSheet = newSheet.substring(4);
+
+
+  }
+
+  handleClick = (event) =>  {
+    this.setState({current: this.event.target.id})
   }
 
   render() {
     return (
       <div>
-        <div className="flex f-around">
-          <p className="content-message">
-            Ever since I've access to a computer, I've loved spreadsheets.
-            There's something so lovely about clean, well-formatted, and
-            visually appealing data. Throughout all my various hobbies,
-            spreadsheets are a commonality. Below, you'll see a spreadsheet
-            where I track the releases of packs for the Sims 4, a spreadsheet
-            where I try to predict the winner of Eurovision from Youtube
-            rankings, a spreadsheet where I list all of the books I own, and
-            more! Many of these spreadsheets I actively use and update with new
-            information, so keep an eye out for change.
-          </p>
-          <div className="flex f-around f-wrap f-vcenter">
-            <button
-              onClick={handleClick}
-              className="waves-effect waves-light btn light-green"
-              id="btn-sims"
-            >
-              Sims 4 Packs
-            </button>
-            <button
-              onClick={handleClick}
-              className="waves-effect waves-light btn light-green"
-              id="btn-esc22"
-            >
-              Eurovision 2022 Predictions
-            </button>
-            <button
-              onClick={handleClick}
-              className="waves-effect waves-light btn light-green"
-              id="btn-books"
-            >
-              Books
-            </button>
+        <div className="flex f-around container">
+          <div className="row">
+            <div className="col l8 m6 s12">
+              <p className="content-message mt-n">
+                Ever since I've access to a computer, I've loved spreadsheets.
+                There's something so lovely about clean, well-formatted, and
+                visually appealing data. Throughout all my various hobbies,
+                spreadsheets are a commonality. Below, you'll see a spreadsheet
+                where I track the releases of packs for the Sims 4, a spreadsheet
+                where I try to predict the winner of Eurovision from Youtube
+                rankings, a spreadsheet where I list all of the books I own, and
+                more! Many of these spreadsheets I actively use and update with new
+                information, so keep an eye out for change.
+              </p>
+            </div>
+            <div className="col l4 m6 s12">
+              <div className="flex f-around f-wrap f-vcenter">
+                <button
+                  onClick={this.handleClick}
+                  className="waves-effect waves-light btn light-green"
+                  id="btn-sims"
+                >
+                  Sims 4 Packs
+                </button>
+                <button
+                  onClick={this.handleClick}
+                  className="waves-effect waves-light btn light-green"
+                  id="btn-esc22"
+                >
+                  Eurovision 2022 Predictions
+                </button>
+                <button
+                  onClick={this.handleClick}
+                  className="waves-effect waves-light btn light-green"
+                  id="btn-books"
+                >
+                  Books
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div className="container line light-green darken-3"></div>
         <div>
-          <div id="sec-sims" className="hide">
+          <div id="0" className="hide">
             <div className="container">
               <h4>Sims 4 Pack Releases</h4>
               <p>
@@ -70,7 +86,7 @@ class Spreadsheets extends Component{
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCdrFzWYnk-JcUyBnthPKl3Dx8A2396Pkk302422nfRoY2apLyEEri-AnM7qVeFoEhABMx7DU0i26-/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="sec-esc22" className="hide">
+          <div id="1" className="hide">
             <div className="container">
               <h4>Eurovision 2022</h4>
               <p>
@@ -91,7 +107,7 @@ class Spreadsheets extends Component{
               </p>
             </div>
             <iframe
-              id="frame-esc22"
+              id="2"
               className="spreadsheet-frame hide"
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDPtoPUbRSozcdEqZ9RYvIL-jDl0ZsirDDekUOMKMhvQOfNKp3FhPvyH1GMWr4jZEDWjtX0jr8iU9Q/pubhtml?widget=true&amp;headers=false"
             ></iframe>
@@ -119,7 +135,7 @@ class Spreadsheets extends Component{
         </div>
       </div>
     );
-                }
+  }
 }
 
 export default Spreadsheets;

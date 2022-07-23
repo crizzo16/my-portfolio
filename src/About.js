@@ -38,7 +38,7 @@ function About(props) {
             <p className="fun-fact-header light-green darken-3">
               Currently Reading
             </p>
-            <p className="fun-fact-content">
+            <p className="fun-fact-content light-green lighten-3">
               The Galaxy and the Ground Within by Becky Chambers
             </p>
           </div>
@@ -48,7 +48,7 @@ function About(props) {
             <p className="fun-fact-header light-green darken-3">
               Currently Watching
             </p>
-            <p className="fun-fact-content">
+            <p className="fun-fact-content light-green lighten-3">
               The Boys, The Sea Beast, Critical Role
             </p>
           </div>
@@ -58,7 +58,7 @@ function About(props) {
             <p className="fun-fact-header light-green darken-3">
               Currently Playing
             </p>
-            <p className="fun-fact-content">
+            <p className="fun-fact-content light-green lighten-3">
               Battle for Bikini Bottom, Marvel Avengers
             </p>
           </div>
@@ -68,7 +68,7 @@ function About(props) {
             <p className="fun-fact-header light-green darken-3">
               Currently Running
             </p>
-            <p className="fun-fact-content">
+            <p className="fun-fact-content light-green lighten-3">
               Ghosts of Saltmarsh: Salvage Operation
             </p>
           </div>

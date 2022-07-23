@@ -26,9 +26,6 @@ class App extends Component {
               <NavLink to="/" className="item">
                 About
               </NavLink>
-              <NavLink to="/projects" className="item">
-                Projects
-              </NavLink>
               <NavLink to="/data" className="item">
                 Data &amp; Spreadsheets
               </NavLink>

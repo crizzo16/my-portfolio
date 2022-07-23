@@ -15,6 +15,8 @@
 .f-around { justify-content: space-around; }
 .f-wrap { flex-wrap: wrap; }
 .mt-lg { margin-top: 48px; }
+.mt-n {margin-top: 0;}
+.h100 {height: 100%;}
 
 .frame {
   border: 8px solid #558b2f;
@@ -32,7 +34,7 @@
 .navigation, .page-header {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  font-family: 'Fugaz-One', sans-serif;
+  font-family: "Fugaz One", sans-serif;
 }
 
 .navigation-sub {
@@ -41,6 +43,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   height: 40px;
+  font-weight: normal;
 }
 
 .navigation-sub .item {
@@ -166,6 +169,8 @@
 .fun-fact-content {
   margin: 0;
   padding: 8px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .circle {
