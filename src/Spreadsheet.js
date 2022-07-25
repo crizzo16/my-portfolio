@@ -1,22 +1,20 @@
 import { render } from "@testing-library/react";
 import React, { Component } from "react";
 
-class Spreadsheets extends Component {
+class Spreadsheets extends Component {  
   state = {
-    current: 2
+    current: [true, false, false]
   }
 
-  handleClick2(event) {
+  handleClick = (event) => {
     event.preventDefault();
 
     let newSheet = event.target.id;
-    newSheet = newSheet.substring(4);
-
-
-  }
-
-  handleClick = (event) =>  {
-    this.setState({current: this.event.target.id})
+    newSheet = parseInt(newSheet.substring(4));
+    let future = [false, false, false];
+    future[newSheet] = true;
+    //console.log(this.state);
+    this.setState({current: future});
   }
 
   render() {
@@ -27,7 +25,7 @@ class Spreadsheets extends Component {
             <div className="col l8 m6 s12">
               <p className="content-message mt-n">
                 Ever since I've access to a computer, I've loved spreadsheets.
-                There's something so lovely about clean, well-formatted, and
+                There's something so satisfying about clean, well-formatted, and
                 visually appealing data. Throughout all my various hobbies,
                 spreadsheets are a commonality. Below, you'll see a spreadsheet
                 where I track the releases of packs for the Sims 4, a spreadsheet
@@ -42,21 +40,21 @@ class Spreadsheets extends Component {
                 <button
                   onClick={this.handleClick}
                   className="waves-effect waves-light btn light-green"
-                  id="btn-sims"
+                  id="btn-0"
                 >
                   Sims 4 Packs
                 </button>
                 <button
                   onClick={this.handleClick}
                   className="waves-effect waves-light btn light-green"
-                  id="btn-esc22"
+                  id="btn-1"
                 >
                   Eurovision 2022 Predictions
                 </button>
                 <button
                   onClick={this.handleClick}
                   className="waves-effect waves-light btn light-green"
-                  id="btn-books"
+                  id="btn-2"
                 >
                   Books
                 </button>
@@ -64,11 +62,13 @@ class Spreadsheets extends Component {
             </div>
           </div>
         </div>
-        <div className="container line light-green darken-3"></div>
-        <div>
-          <div id="0" className="hide">
+        <div className="container">
+          <div className="line light-green darken-3"></div>
+        </div>
+        <div className="mb-lg">
+          <div id="sec-books" className={this.state.current[0] ? "" : "hide"}>
             <div className="container">
-              <h4>Sims 4 Pack Releases</h4>
+              <h4 className="sheet-subheading">Sims 4 Pack Releases</h4>
               <p>
                 The idea of this spreadsheet was to track Sims 4 releases in
                 general. One of the first stats I pulled out was how much time
@@ -86,9 +86,9 @@ class Spreadsheets extends Component {
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCdrFzWYnk-JcUyBnthPKl3Dx8A2396Pkk302422nfRoY2apLyEEri-AnM7qVeFoEhABMx7DU0i26-/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="1" className="hide">
+          <div id="sec-esc22" className={this.state.current[1] ? "" : "hide"}>
             <div className="container">
-              <h4>Eurovision 2022</h4>
+              <h4 className="sheet-subheading">Eurovision 2022</h4>
               <p>
                 Eurovision is ripe for statistical analysis, even just using
                 Google Sheets. It's a popular phenomenon on Youtube to rank your
@@ -107,14 +107,14 @@ class Spreadsheets extends Component {
               </p>
             </div>
             <iframe
-              id="2"
-              className="spreadsheet-frame hide"
+              id="frame-esc22"
+              className="spreadsheet-frame"
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDPtoPUbRSozcdEqZ9RYvIL-jDl0ZsirDDekUOMKMhvQOfNKp3FhPvyH1GMWr4jZEDWjtX0jr8iU9Q/pubhtml?widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="sec-books" className="">
+          <div id="sec-books" className={this.state.current[2] ? "" : "hide"}>
             <div className="container">
-              <h4>Books I Own</h4>
+              <h4 className="sheet-subheading">Books I Own</h4>
               <p>
                 After talking to a friend about not buying a book until I found
                 it at a thrift store, I was curious about what percentage of my
