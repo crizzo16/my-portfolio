@@ -184,7 +184,21 @@
   justify-content: center;
 }
 
-.sheet-subheading {
+.contact-icon {
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+.circle:hover {
+  background: #c5e1a5 !important; 
+}
+
+.circle:hover .contact-icon {
+  color: #689f38;
+}
+
+.sheet-subheading, .contact-type h4 {
   font-family: "Fugaz One", sans-serif;
 }
 
