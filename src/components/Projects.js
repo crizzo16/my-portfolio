@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Thumbnail from "./Thumbnail.js"; // Import the Thumbnail component
 import ProjectCard from "./ProjectCard.js";
-import CoinConverter from "./components/dnd-components/CoinConverter.js";
-import "./App.css";
+import CoinConverter from "./dnd-components/CoinConverter.js";
+import "./assets/App.css";
 
 class Projects extends Component {
 

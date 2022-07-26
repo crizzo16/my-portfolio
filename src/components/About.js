@@ -32,8 +32,8 @@ function About(props) {
           <img className="about-img" src="./assets/Celia01.jpeg" />
         </div>
       </div>
-      <div className="row mt-lg">
-        <div className="col s12 m6 l3">
+      <div className="row mt-lg f-wrap">
+        <div className="col s12 l6">
           <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Reading
@@ -43,17 +43,17 @@ function About(props) {
             </p>
           </div>
         </div>
-        <div className="col l3 m6 s12">
+        <div className="col l6 s12">
           <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Watching
             </p>
             <p className="fun-fact-content light-green lighten-3">
-              The Boys, The Sea Beast, Critical Role
+              The Boys, Young Justice, Critical Role, Dimension 20
             </p>
           </div>
         </div>
-        <div className="col l3 m6 s12">
+        <div className="col l6 s12">
           <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Playing
@@ -63,7 +63,7 @@ function About(props) {
             </p>
           </div>
         </div>
-        <div className="col l3 m6 s12">
+        <div className="col l6 s12">
           <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
               Currently Running
