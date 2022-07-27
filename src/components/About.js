@@ -70,7 +70,7 @@ function About(props) {
               Currently Learning
             </p>
             <p className="fun-fact-content light-green lighten-3">
-              Data Science,
+              Data Science Foundations: Statistical Inference
             </p>
           </div>
         </div>

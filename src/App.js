@@ -67,13 +67,18 @@ class App extends Component {
             </li>
           </ul>
           <div className="content">
-            <Routes>
-              <Route path="/" element={<About />} />
-              <Route exact path="/projects" element={<Projects />} />
-              <Route path="/data" element={<Spreadsheets />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/resume" element={<Resume />} />
-            </Routes>
+            <div className="main-content">
+              <Routes>
+                <Route path="/" element={<About />} />
+                <Route exact path="/projects" element={<Projects />} />
+                <Route path="/data" element={<Spreadsheets />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/resume" element={<Resume />} />
+              </Routes>
+            </div>
+            <div className="mobile-content">
+              Mobile site in development, please check out the site on a tablet or larger screen. Thank you for your patience!
+            </div>
           </div>
         </div>
       </div>
