@@ -3,8 +3,11 @@ import React from "react";
 function About(props) {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col l7 s12">
+      <div className="row flex f-wrap f-around">
+        <div className="col xl5 l12 flex f-vcenter">
+          <img className="about-img" src="./assets/Celia01.jpeg" />
+        </div>
+        <div className="col xl7 l12">
           <p>
             Raised in central California, Celia has always enjoyed logic puzzles
             and figuring things out, even if she hadn't discovered coding yet.
@@ -28,9 +31,6 @@ function About(props) {
             them to play a board game or two.
           </p>
         </div>
-        <div className="col l5 s12 flex f-vcenter">
-          <img className="about-img" src="./assets/Celia01.jpeg" />
-        </div>
       </div>
       <div className="row mt-lg f-wrap">
         <div className="col s12 l6">
@@ -39,7 +39,8 @@ function About(props) {
               Currently Reading
             </p>
             <p className="fun-fact-content light-green lighten-3">
-              The Galaxy and the Ground Within by Becky Chambers
+              The Galaxy and the Ground Within by Becky Chambers, How to Keep
+              House While Drowning by KC Davis
             </p>
           </div>
         </div>
@@ -59,17 +60,17 @@ function About(props) {
               Currently Playing
             </p>
             <p className="fun-fact-content light-green lighten-3">
-              Battle for Bikini Bottom, Marvel Avengers
+              Battle for Bikini Bottom, Marvel Avengers, Ghosts of Saltmarsh
             </p>
           </div>
         </div>
         <div className="col l6 s12">
           <div className="about-fun-fact">
             <p className="fun-fact-header light-green darken-3">
-              Currently Running
+              Currently Learning
             </p>
             <p className="fun-fact-content light-green lighten-3">
-              Ghosts of Saltmarsh: Salvage Operation
+              Data Science,
             </p>
           </div>
         </div>

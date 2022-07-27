@@ -20,8 +20,8 @@ class App extends Component {
       <div className="App">
         <div className="frame">
           <div className="navigation">
-            <div className="page-header light-green darken-3">
-              <h2 id="page-title">
+            <div className="page-header light-green darken-3 flex f-vcenter f-center">
+              <h2 id="page-title" className="flex f-vcenter f-center">
                 <Routes>
                   <Route exact path="/" element="I Believe In The Power Of Nice" />
                   <Route path="/resume" element="A Lifetime of Learning" />

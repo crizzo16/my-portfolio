@@ -10,7 +10,7 @@ function Resume() {
         life-long passion for organized data &amp; code, beautiful visuals, and
         learning new things.
       </p>
-      <div className="row flex f-around">
+      <div className="row flex">
         <div className="flex f-vcenter f-right">
           <img className="resume-img" src="./assets/resume-juggler.png" />
         </div>
@@ -39,11 +39,11 @@ function Resume() {
           </p>
         </div>
       </div>
-      <div className="row">
-        <div className="col l2 m12 flex f-vcenter">
+      <div className="row flex">
+        <div className="flex f-vcenter f-right">
           <img className="resume-img" src="./assets/resume-laptop.png" />
         </div>
-        <div className="col l10 m12">
+        <div className="section">
           <h5>Applications Built</h5>
           <p>
             <strong>Flipcause</strong> (
@@ -96,41 +96,50 @@ function Resume() {
           </ul>
         </div>
       </div>
-      <div className="row">
-        <div className="col l10 m12">
+      <div className="row flex">
+        <div className="flex f-vcenter f-right">
+          <img className="resume-img" src="./assets/resume-shaking-hands.png" />
+        </div>
+        <div className="section">
           <h5>Work Experience</h5>
           <p className="resume-left">
-            <strong>Flipcause</strong>, Remote<br />
+            <strong>Flipcause</strong>, Remote
+            <br />
             <i>Frontend Web Developer, 2021-2022</i>
           </p>
           <p className="resume-left">
-            <strong>All Things Right &amp; Relevant</strong>, Davis, CA<br />
+            <strong>All Things Right &amp; Relevant</strong>, Davis, CA
+            <br />
             <i>Sales Associate, 2017 - 2021</i>
           </p>
         </div>
-        <div className="col l2 m12 flex f-vcenter">
-          <img className="resume-img" src="./assets/resume-shaking-hands.png" />
-        </div>
       </div>
-      <div className="row">
-        <div className="col l2 m12 flex f-vcenter">
+      <div className="row flex">
+        <div className="flex f-vcenter f-right">
           <img className="resume-img" src="./assets/resume-graduate-cap.png" />
         </div>
-        <div className="col l10 m12">
+        <div className="section">
           <h5>Education</h5>
           <p className="resume-left">
-            <strong>Google Data Analytics Professional Certificate</strong><br />
-            <i>Google Career Certificates</i><br />
-            Gained a deeper understanding of Data Analytics practices, SQL, Excel/Google Sheets, and R.
+            <strong>Google Data Analytics Professional Certificate</strong>
+            <br />
+            <i>Google Career Certificates</i>
+            <br />
+            Gained a deeper understanding of Data Analytics practices, SQL,
+            Excel/Google Sheets, and R.
           </p>
           <p className="resume-left">
-            <strong>UC Davis Extension</strong>, Davis, CA<br />
+            <strong>UC Davis Extension</strong>, Davis, CA
+            <br />
             <i>Full Stack Web Development Program</i>
           </p>
           <p className="resume-left">
-            <strong>University of Puget Sound</strong>, Tacoma, WA<br />
-            <i>B.S. in Computer Science</i><br />
-            Minors in Mathematics and French. A member of Upsilon Pi Epsilon, Pi Mu Epsilon, and Phi Eta Sigma honor societies. 
+            <strong>University of Puget Sound</strong>, Tacoma, WA
+            <br />
+            <i>B.S. in Computer Science</i>
+            <br />
+            Minors in Mathematics and French. A member of Upsilon Pi Epsilon, Pi
+            Mu Epsilon, and Phi Eta Sigma honor societies.
           </p>
         </div>
       </div>
