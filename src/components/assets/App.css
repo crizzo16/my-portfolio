@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -17,16 +17,11 @@
 .mt-lg { margin-top: 48px; }
 .mb-lg { margin-bottom: 48px; }
 .mt-n {margin-top: 0;}
+.ml-n {margin-left: 0;}
+.mr-0 {margin-right: 0;}
 .h100 {height: 100%;}
 h1, h2, h3, h4, h5, h6 { font-family: "Fugaz One", sans-serif; }
 strong {font-weight: bold;}
-
-.placeholder {
-  width: 100%;
-  height: 100px;
-  background: magenta;
-  border-radius: 16px;
-}
 
 .frame {
   border: 8px solid #558b2f;
@@ -53,16 +48,21 @@ strong {font-weight: bold;}
   width: 100%;
   flex-wrap: nowrap;
   justify-content: space-around;
-  height: 40px;
+  height: 60px;
   font-weight: normal;
 }
 
 .navigation-sub .item, .sidenav-trigger {
   width: 100%;
-  padding: 8px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   text-decoration: none;
   font-weight: bold;
   color: black;
+  font-size: 24px;
 }
 
 .navigation-sub .item:hover {
@@ -216,7 +216,7 @@ strong {font-weight: bold;}
   margin: 8px;
 }
 
-h6 {text-decoration: underline; margin-top: 0;}
+h5 {text-decoration: underline; margin-top: 0;}
 
 .website-link {
   text-decoration: underline;
@@ -225,9 +225,33 @@ h6 {text-decoration: underline; margin-top: 0;}
 
 .resume-img {
   max-height: 200px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
+.resume-list {
+  list-style-type: circle;
+  list-style-position: inside;
+}
 
+.resume-list li {
+  text-align: left;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.resume-sec .row {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.f-right {
+  float: right;
+}
+
+.section {
+  max-width: 800px;
+}
 
 
 
@@ -259,6 +283,16 @@ h6 {text-decoration: underline; margin-top: 0;}
 }
 
 @media (max-width: 768px) {
+  .App {
+    max-width: 90%;
+  }
+
+  .resume-sec .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
   .App {
     max-width: 90%;
   }

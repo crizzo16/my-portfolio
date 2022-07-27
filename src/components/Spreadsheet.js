@@ -39,21 +39,21 @@ class Spreadsheets extends Component {
               <div className="flex f-around f-wrap f-vcenter">
                 <button
                   onClick={this.handleClick}
-                  className="waves-effect waves-light btn light-green"
+                  className="waves-effect btn light-green"
                   id="btn-0"
                 >
                   Sims 4 Packs
                 </button>
                 <button
                   onClick={this.handleClick}
-                  className="waves-effect waves-light btn light-green"
+                  className="waves-effect btn light-green"
                   id="btn-1"
                 >
                   Eurovision 2022 Predictions
                 </button>
                 <button
                   onClick={this.handleClick}
-                  className="waves-effect waves-light btn light-green"
+                  className="waves-effect btn light-green"
                   id="btn-2"
                 >
                   Books

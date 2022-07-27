@@ -2,7 +2,7 @@ import React from "react";
 
 function Resume() {
   return (
-    <div className="container">
+    <div className="container resume-sec">
       <h4>Resume</h4>
       <p>
         Web Developer and Data Analyst with a background in Computer Science and
@@ -10,9 +10,12 @@ function Resume() {
         life-long passion for organized data &amp; code, beautiful visuals, and
         learning new things.
       </p>
-      <div className="row">
-        <div className="col l8 m12">
-          <h6>Knowledge &amp; Skills</h6>
+      <div className="row flex f-around">
+        <div className="flex f-vcenter f-right">
+          <img className="resume-img" src="./assets/resume-juggler.png" />
+        </div>
+        <div className="section">
+          <h5>Knowledge &amp; Skills</h5>
           <p className="resume-left">
             <strong>Languages:</strong> Javascript, HTML, CSS, SQL, Git, R, PHP,
             Python
@@ -35,16 +38,13 @@ function Resume() {
             team player, communication skills
           </p>
         </div>
-        <div className="col l4 m12">
-          <img className="resume-img" src="./assets/resume-juggler.png" />
-        </div>
       </div>
       <div className="row">
-        <div className="col l4 m12">
+        <div className="col l2 m12 flex f-vcenter">
           <img className="resume-img" src="./assets/resume-laptop.png" />
         </div>
-        <div className="col l8 m12">
-          <h6>Applications Built</h6>
+        <div className="col l10 m12">
+          <h5>Applications Built</h5>
           <p>
             <strong>Flipcause</strong> (
             <a
@@ -56,7 +56,7 @@ function Resume() {
             </a>
             )
           </p>
-          <ul>
+          <ul className="resume-list">
             <li>
               Revitalized HTML emails to display consistently across multiple
               devices and screen widths
@@ -81,7 +81,7 @@ function Resume() {
             </a>
             )
           </p>
-          <ul>
+          <ul className="resume-list">
             <li>
               Created a friendly user interface that is accessible for all age
               ranges
@@ -97,19 +97,41 @@ function Resume() {
         </div>
       </div>
       <div className="row">
-        <div className="col l8 m12">
-          <h6>Work Experience</h6>
+        <div className="col l10 m12">
+          <h5>Work Experience</h5>
+          <p className="resume-left">
+            <strong>Flipcause</strong>, Remote<br />
+            <i>Frontend Web Developer, 2021-2022</i>
+          </p>
+          <p className="resume-left">
+            <strong>All Things Right &amp; Relevant</strong>, Davis, CA<br />
+            <i>Sales Associate, 2017 - 2021</i>
+          </p>
         </div>
-        <div className="col l4 m12">
+        <div className="col l2 m12 flex f-vcenter">
           <img className="resume-img" src="./assets/resume-shaking-hands.png" />
         </div>
       </div>
       <div className="row">
-        <div className="col l4 m12">
+        <div className="col l2 m12 flex f-vcenter">
           <img className="resume-img" src="./assets/resume-graduate-cap.png" />
         </div>
-        <div className="col l8 m12">
-          <h6>Education</h6>
+        <div className="col l10 m12">
+          <h5>Education</h5>
+          <p className="resume-left">
+            <strong>Google Data Analytics Professional Certificate</strong><br />
+            <i>Google Career Certificates</i><br />
+            Gained a deeper understanding of Data Analytics practices, SQL, Excel/Google Sheets, and R.
+          </p>
+          <p className="resume-left">
+            <strong>UC Davis Extension</strong>, Davis, CA<br />
+            <i>Full Stack Web Development Program</i>
+          </p>
+          <p className="resume-left">
+            <strong>University of Puget Sound</strong>, Tacoma, WA<br />
+            <i>B.S. in Computer Science</i><br />
+            Minors in Mathematics and French. A member of Upsilon Pi Epsilon, Pi Mu Epsilon, and Phi Eta Sigma honor societies. 
+          </p>
         </div>
       </div>
     </div>
