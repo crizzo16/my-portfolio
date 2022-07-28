@@ -5,7 +5,7 @@ import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
   return (
-    <div className="flex f-wrap f-around mt-lg">
+    <div className="flex f-wrap f-around">
       <div className="contact-type">
         <a target="_blank" href="https://www.linkedin.com/in/cecilia-rizzo/">
           <div className="circle light-green darken-4">

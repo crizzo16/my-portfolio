@@ -20,9 +20,9 @@ class Spreadsheets extends Component {
   render() {
     return (
       <div>
-        <div className="flex f-around container">
+        <div className="flex f-around container spreadsheets-main">
           <div className="row">
-            <div className="col l8 m6 s12">
+            <div className="col xl8 l12">
               <p className="content-message mt-n">
                 Ever since I've access to a computer, I've loved spreadsheets.
                 There's something so satisfying about clean, well-formatted, and
@@ -35,7 +35,7 @@ class Spreadsheets extends Component {
                 information, so keep an eye out for change.
               </p>
             </div>
-            <div className="col l4 m6 s12">
+            <div className="col xl4 l6 s12">
               <div className="flex f-around f-wrap f-vcenter">
                 <button
                   onClick={this.handleClick}
