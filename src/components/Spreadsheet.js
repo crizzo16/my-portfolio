@@ -66,7 +66,7 @@ class Spreadsheets extends Component {
           <div className="line light-green darken-3"></div>
         </div>
         <div className="mb-lg">
-          <div id="sec-books" className={this.state.current[0] ? "" : "hide"}>
+          <div id="sec-books" className={this.state.current[0] ? "sheet-sec" : "sheet-sec hide"}>
             <div className="container">
               <h4 className="sheet-subheading">Sims 4 Pack Releases</h4>
               <p>
@@ -86,7 +86,7 @@ class Spreadsheets extends Component {
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCdrFzWYnk-JcUyBnthPKl3Dx8A2396Pkk302422nfRoY2apLyEEri-AnM7qVeFoEhABMx7DU0i26-/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="sec-esc22" className={this.state.current[1] ? "" : "hide"}>
+          <div id="sec-esc22" className={this.state.current[1] ? "sheet-sec" : "sheet-sec hide"}>
             <div className="container">
               <h4 className="sheet-subheading">Eurovision 2022</h4>
               <p>
@@ -100,7 +100,7 @@ class Spreadsheets extends Component {
                 the finals. While Sweden, the top choice, didn't win, it did
                 place 4th. A big surprise was Austria. While they were the only
                 non-Big 5 country to always make the finals in the Youtube
-                rankings, their average performance didn't qualify they for the
+                rankings, their average performance didn't qualify them for the
                 finals, showing that analysis of studio versions of songs can't
                 fully predict what happens when everyone gets on the Eurovision
                 stage.
@@ -112,7 +112,7 @@ class Spreadsheets extends Component {
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDPtoPUbRSozcdEqZ9RYvIL-jDl0ZsirDDekUOMKMhvQOfNKp3FhPvyH1GMWr4jZEDWjtX0jr8iU9Q/pubhtml?widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="sec-books" className={this.state.current[2] ? "" : "hide"}>
+          <div id="sec-books" className={this.state.current[2] ? "sheet-sec" : "sheet-sec hide"}>
             <div className="container">
               <h4 className="sheet-subheading">Books I Own</h4>
               <p>
