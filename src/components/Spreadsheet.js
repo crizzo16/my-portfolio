@@ -1,21 +1,22 @@
 import { render } from "@testing-library/react";
 import React, { Component } from "react";
+import Tableau from "./Tableau.js"
 
-class Spreadsheets extends Component {  
+class Spreadsheets extends Component {
   state = {
-    current: [true, false, false]
-  }
+    current: [true, false, false, false]
+  };
 
   handleClick = (event) => {
     event.preventDefault();
 
     let newSheet = event.target.id;
     newSheet = parseInt(newSheet.substring(4));
-    let future = [false, false, false];
+    let future = [false, false, false, false];
     future[newSheet] = true;
     //console.log(this.state);
-    this.setState({current: future});
-  }
+    this.setState({ current: future });
+  };
 
   render() {
     return (
@@ -28,11 +29,11 @@ class Spreadsheets extends Component {
                 There's something so satisfying about clean, well-formatted, and
                 visually appealing data. Throughout all my various hobbies,
                 spreadsheets are a commonality. Below, you'll see a spreadsheet
-                where I track the releases of packs for the Sims 4, a spreadsheet
-                where I try to predict the winner of Eurovision from Youtube
-                rankings, a spreadsheet where I list all of the books I own, and
-                more! Many of these spreadsheets I actively use and update with new
-                information, so keep an eye out for change.
+                where I track the releases of packs for the Sims 4, a
+                spreadsheet where I try to predict the winner of Eurovision from
+                Youtube rankings, a spreadsheet where I list all of the books I
+                own, and more! Many of these spreadsheets I actively use and
+                update with new information, so keep an eye out for change.
               </p>
             </div>
             <div className="col xl4 l6 s12">
@@ -58,6 +59,13 @@ class Spreadsheets extends Component {
                 >
                   Books
                 </button>
+                <button
+                  onClick={this.handleClick}
+                  className="waves-effect btn light-green"
+                  id="btn-3"
+                >
+                  Dimension 20 Minis Auction
+                </button>
               </div>
             </div>
           </div>
@@ -66,7 +74,10 @@ class Spreadsheets extends Component {
           <div className="line light-green darken-3"></div>
         </div>
         <div className="mb-lg">
-          <div id="sec-books" className={this.state.current[0] ? "sheet-sec" : "sheet-sec hide"}>
+          <div
+            id="sec-books"
+            className={this.state.current[0] ? "sheet-sec" : "sheet-sec hide"}
+          >
             <div className="container">
               <h4 className="sheet-subheading">Sims 4 Pack Releases</h4>
               <p>
@@ -79,6 +90,24 @@ class Spreadsheets extends Component {
                 were already color-coded, making this a very colorful
                 spreadsheet!
               </p>
+              <p>
+                This spreadsheet has evolved over time. At the beginning, it
+                only looked at release dates. As someone who only got into the
+                Sims in March 2021, I was curious how often they released new
+                content. In particular I was curious about the frequency of
+                major pack releases. I started this spreadsheet around the same
+                time as a new content type, Kits, were first released, adding in
+                a new layer of exploration as the Sims appears to have pivoted
+                from Stuff Packs to the even smaller Kits. Another area of
+                interest for me was the amount of items in each release. Items
+                in the Sims can be broken into CAS (Create a Sim) items and
+                Build/Buy items. From there, it was easy to extrapolate the pack
+                value based on number of items alone. However, this doesn't tell
+                the whole story. New gameplay features can be hard to quantify,
+                such as new careers or game systems. But for certain Simmers,
+                knowing the value of the items you're buying can have an impact
+                on whether you buy the pack.
+              </p>
             </div>
             <iframe
               id="frame-sims"
@@ -86,7 +115,10 @@ class Spreadsheets extends Component {
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCdrFzWYnk-JcUyBnthPKl3Dx8A2396Pkk302422nfRoY2apLyEEri-AnM7qVeFoEhABMx7DU0i26-/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="sec-esc22" className={this.state.current[1] ? "sheet-sec" : "sheet-sec hide"}>
+          <div
+            id="sec-esc22"
+            className={this.state.current[1] ? "sheet-sec" : "sheet-sec hide"}
+          >
             <div className="container">
               <h4 className="sheet-subheading">Eurovision 2022</h4>
               <p>
@@ -105,6 +137,28 @@ class Spreadsheets extends Component {
                 fully predict what happens when everyone gets on the Eurovision
                 stage.
               </p>
+              <p>
+                At the bottom of the spreadsheet are the other sheets that help
+                with creating this final collection. <strong>Actual</strong>{" "}
+                looks at the real placements of the countries and how that
+                compares to the data I collected. <strong>Input</strong> is
+                obviously the sheet where I inputted all the data, as well as
+                started to sort it based on semi-finals. I also added a way to
+                quickly and easily see where various Youtubers ranked a specific
+                country, as well as where their personal cutoffs for each
+                semi-final ranked. <strong>Middleman</strong> is only used to
+                calculate places in each semi-final to better automatically sort
+                data on the real spreadsheet.{" "}
+                <strong>My Ranking Over Time</strong> was a mini-experiment to
+                see how my taste changed over the course of the month.{" "}
+                <strong>Calculating Points</strong> was used during the live
+                show to be able to see who the winner would be, since there are
+                a finite amount of points to be given. It definitely helped take
+                the sting out of the very drawn out moments between announcing
+                points. It also shows which countries were preferred by the
+                public and which were preferred by the juries - Moldova was
+                ranked 20th by the juries, but 2nd by the public!
+              </p>
             </div>
             <iframe
               id="frame-esc22"
@@ -112,7 +166,10 @@ class Spreadsheets extends Component {
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDPtoPUbRSozcdEqZ9RYvIL-jDl0ZsirDDekUOMKMhvQOfNKp3FhPvyH1GMWr4jZEDWjtX0jr8iU9Q/pubhtml?widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="sec-books" className={this.state.current[2] ? "sheet-sec" : "sheet-sec hide"}>
+          <div
+            id="sec-books"
+            className={this.state.current[2] ? "sheet-sec" : "sheet-sec hide"}
+          >
             <div className="container">
               <h4 className="sheet-subheading">Books I Own</h4>
               <p>
@@ -131,6 +188,15 @@ class Spreadsheets extends Component {
               className="spreadsheet-frame"
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQlcmbzq5saB-cIt_HKOkNlv90dQk0Zf0lplUGw6bjPxW-HWf1kS64d1Kh2mb2B6-scVhj4jEtEMBP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
             ></iframe>
+          </div>
+          <div id="sec-d20auction" className={this.state.current[3] ? "sheet-sec" : "sheet-sec hide"}>
+            <div className="container">
+              <h4>Dimension 20 Minis Auction</h4>
+              <p>
+                In July 2022, Dimension 20 announced that they would be auctioning off custom minis from their acclaimed season <strong>A Crown of Candy</strong>. They started the bids at $50, but no one realized just how popular this auction would be. The literal second each new wave is released, the minis shoot up in amount as bidding wars begin. This visualization compares the importance of the mini with the amount raised and the number of bids.
+              </p>
+            </div>
+            <iframe id="frame-d20auction" className="spreadsheet-frame" src="https://public.tableau.com/shared/X2C4D5XP9?:display_count=n&:origin=viz_share_link"></iframe>
           </div>
         </div>
       </div>
