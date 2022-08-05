@@ -148,6 +148,12 @@ strong {font-weight: bold;}
   height: 60vh;
 }
 
+.spreadsheet-img {
+  min-width: 320px;
+  height: 60vh;
+  width: auto;
+}
+
 .content-message {
   max-width: 500px;
   justify-content: center;

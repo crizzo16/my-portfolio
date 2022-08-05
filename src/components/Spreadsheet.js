@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react";
 import React, { Component } from "react";
-import Tableau from "./Tableau.js"
+import tableau from "tableau-api";
 
 class Spreadsheets extends Component {
   state = {
-    current: [true, false, false, false]
+    current: [true, false, false, false],
   };
 
   handleClick = (event) => {
@@ -17,6 +17,20 @@ class Spreadsheets extends Component {
     //console.log(this.state);
     this.setState({ current: future });
   };
+
+  /*initViz() {
+    const vizUrl = "https://public.tableau.com/shared/X2C4D5XP9?:display_count=n&:origin=viz_share_link";
+    const vizContainer = this.vizContainer;
+    const options = {
+      width: this.vizContainer.offsetWidth,
+      height: this.vizContainer.offsetHeight
+    }
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options);
+  }
+
+  componentDidMount () {
+    this.initViz();
+  } */
 
   render() {
     return (
@@ -189,14 +203,24 @@ class Spreadsheets extends Component {
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQlcmbzq5saB-cIt_HKOkNlv90dQk0Zf0lplUGw6bjPxW-HWf1kS64d1Kh2mb2B6-scVhj4jEtEMBP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
             ></iframe>
           </div>
-          <div id="sec-d20auction" className={this.state.current[3] ? "sheet-sec" : "sheet-sec hide"}>
+          <div
+            id="sec-d20auction"
+            className={this.state.current[3] ? "sheet-sec" : "sheet-sec hide"}
+          >
             <div className="container">
               <h4>Dimension 20 Minis Auction</h4>
               <p>
-                In July 2022, Dimension 20 announced that they would be auctioning off custom minis from their acclaimed season <strong>A Crown of Candy</strong>. They started the bids at $50, but no one realized just how popular this auction would be. The literal second each new wave is released, the minis shoot up in amount as bidding wars begin. This visualization compares the importance of the mini with the amount raised and the number of bids.
+                In July 2022, Dimension 20 announced that they would be
+                auctioning off custom minis from their acclaimed season
+                <strong>A Crown of Candy</strong>. They started the bids at $50,
+                but no one realized just how popular this auction would be. The
+                literal second each new wave is released, the minis shoot up in
+                amount as bidding wars begin. This visualization compares the
+                importance of the mini with the amount raised and the number of
+                bids.
               </p>
             </div>
-            <iframe id="frame-d20auction" className="spreadsheet-frame" src="https://public.tableau.com/shared/X2C4D5XP9?:display_count=n&:origin=viz_share_link"></iframe>
+            <img src="./assets/d20autcion.png" className="spreadsheet-img" />
           </div>
         </div>
       </div>
