@@ -217,9 +217,10 @@ class Spreadsheets extends Component {
                 literal second each new wave is released, the minis shoot up in
                 amount as bidding wars begin. This visualization compares the
                 importance of the mini with the amount raised and the number of
-                bids.
+                bids. By categorizing the minis as player minis, NPC minis, or background minis, we can make a couple of generalizations. First, that play minis tend to earn a lot more with less bids, meaning that people bid high quickly. NPCs tend to earn less, but have a variety of bid levels, showing that they're less important. NPCs are all over the map, likely due to the variance of use on the show. 
               </p>
             </div>
+            <iframe id="frame-d20auction" className="spreadsheet-frame" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmhGIt24-hxahczxDksbg2lsMKT0ya5SEJO49Qu5j0LH8IqlI-yAF9Y6-79Tcttd8RmmIIQffC2drX/pubhtml?gid=1637692870&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
             <img src="./assets/d20autcion.png" className="spreadsheet-img" />
           </div>
         </div>
