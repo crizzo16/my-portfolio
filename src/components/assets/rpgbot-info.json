@@ -1,0 +1,291 @@
+{
+    "classes": [
+        {
+            "class": "Artificer",
+            "hit_points": 2,
+            "saves": 4,
+            "proficiencies": 3,
+            "abilities": [
+                {
+                    "name": "Magical Tinkering",
+                    "grade": 4,
+                    "level": 1
+                }, {
+                    "name": "Spellcasting",
+                    "grade": 3,
+                    "level": 1
+                }, {
+                    "name": "Infuse Item",
+                    "grade": 4,
+                    "level": 2
+                }, {
+                    "name": "The Right Tool for the Job",
+                    "grade": 4,
+                    "level": 3
+                }, {
+                    "name": "Tool Expertise",
+                    "grade": 3,
+                    "level": 6
+                }, {
+                    "name": "Flash of Genius",
+                    "grade": 4,
+                    "level": 7
+                }, {
+                    "name": "Magic Item Adept",
+                    "grade": 3,
+                    "level": 10
+                }, {
+                    "name": "Spell-Storing Item",
+                    "grade": 4,
+                    "level": 11
+                }, {
+                    "name": "Magic Item Savant",
+                    "grade": 3,
+                    "level": 14
+                }, {
+                    "name": "Magic Item Master",
+                    "grade": 3,
+                    "level": 18
+                }, {
+                    "name": "Soul of Artifice",
+                    "grade": 4,
+                    "level": 20
+                }
+            ],
+            "Ascores": [
+                {
+                    "list": [
+                        1,3,3,4,1,1
+                    ]
+                }
+            ],
+            "skills": [
+                {
+                    "name": "Arcana",
+                    "grade": 4
+                }, {
+                    "name": "History",
+                    "grade": 2
+                }, {
+                    "name": "Investigation",
+                    "grade": 4
+                }, {
+                    "name": "Medicine",
+                    "grade": 1
+                }, {
+                    "name": "Nature",
+                    "grade": 3
+                }, {
+                    "name": "Perception",
+                    "grade": 4
+                }, {
+                    "name": "Sleight of Hand",
+                    "grade": 2
+                }
+            ]
+        }, {
+            "class": "Barbarian",
+            "hit_points": 4,
+            "saves": 3,
+            "proficiencies": 2,
+            "abilities": [
+                {
+                    "name": "Rage",
+                    "grade": 4,
+                    "level": 1
+                }, {
+                    "name": "Unarmored Defense",
+                    "grade": 2,
+                    "level": 1
+                }, {
+                    "name": "Reckless Attack",
+                    "grade": 4,
+                    "level": 2
+                }, {
+                    "name": "Danger Sense",
+                    "grade": 4,
+                    "level": 2
+                }, {
+                    "name": "Extra Attack",
+                    "grade": 4,
+                    "level": 5
+                }, {
+                    "name": "Fast Movement",
+                    "grade": 2,
+                    "level": 5
+                }, {
+                    "name": "Feral Instinct",
+                    "grade": 4,
+                    "level": 7
+                }, {
+                    "name": "Brutal Critical",
+                    "grade": 2,
+                    "level": 9
+                }, {
+                    "name": "Relentless Rage",
+                    "grade": 4,
+                    "level": 11
+                }, {
+                    "name": "Persistent Rage",
+                    "grade": 2,
+                    "level": 15
+                }, {
+                    "name": "Indomitable Might",
+                    "grade": 3,
+                    "level": 18
+                }, {
+                    "name": "Primal Champion",
+                    "grade": 4,
+                    "level": 20
+                }
+            ],
+            "Ascores": [
+                {
+                    "list": [
+                        4,2,4,1,2,2
+                    ]
+                }
+            ],
+            "skills": [
+                {
+                    "name": "Animal Handling",
+                    "grade": 1
+                }, {
+                    "name": "Athletics",
+                    "grade": 4
+                }, {
+                    "name": "Intimidation",
+                    "grade": 2
+                }, {
+                    "name": "Nature",
+                    "grade": 2
+                }, {
+                    "name": "Perception",
+                    "grade": 4
+                }, {
+                    "name": "Survival",
+                    "grade": 3
+                }
+            ]
+        }, {
+            "class": "Bard",
+            "hit_points": 2,
+            "saves": 2,
+            "proficiencies": 3,
+            "abilities": [
+                {
+                    "name": "Spellcasting",
+                    "grade": 4,
+                    "level": 1
+                }, {
+                    "name": "Bardic Inspiration",
+                    "grade": 3,
+                    "level": 1
+                }, {
+                    "name": "Jack of All Trades",
+                    "grade": 4,
+                    "level": 2
+                }, {
+                    "name": "Song of Rest",
+                    "grade": 3,
+                    "level": 2
+                }, {
+                    "name": "Expertise",
+                    "grade": 4,
+                    "level": 3
+                }, {
+                    "name": "Font of Inspiration",
+                    "grade": 4,
+                    "level": 5
+                }, {
+                    "name": "Countercharm",
+                    "grade": 1,
+                    "level": 6
+                }, {
+                    "name": "Magical Secrets",
+                    "grade": 4,
+                    "level": 10
+                }, {
+                    "name": "Superior Inspiration",
+                    "grade": 4,
+                    "level": 20
+                }
+            ],
+            "Ascores": [
+                {
+                    "list": [
+                        1,3,3,2,2,4
+                    ]
+                }
+            ],
+            "skills": [
+                {
+                    "name": "Acrobatics",
+                    "grade": 2
+                }, {
+                    "name": "Animal Handling",
+                    "grade": 1
+                }, {
+                    "name": "Athletics",
+                    "grade": 3
+                }, {
+                    "name": "Arcana",
+                    "grade": 4
+                }, {
+                    "name": "Deception",
+                    "grade": 3
+                }, {
+                    "name": "History",
+                    "grade": 2
+                }, {
+                    "name": "Insight",
+                    "grade": "3"
+                }, {
+                    "name": "Intimidation",
+                    "grade": 4
+                }, {
+                    "name": "Investigation",
+                    "grade": 3
+                }, {
+                    "name": "Medicine",
+                    "grade": 1
+                }, {
+                    "name": "Nature",
+                    "grade": 3
+                }, {
+                    "name": "Perception",
+                    "grade": 4
+                }, {
+                    "name": "Performance",
+                    "grade": 1
+                }, {
+                    "name": "Persuasion",
+                    "grade": 4
+                }, {
+                    "name": "Religion",
+                    "grade": 4
+                }, {
+                    "name": "Sleight of Hand",
+                    "grade": 1
+                }, {
+                    "name": "Stealth",
+                    "grade": 3
+                }, {
+                    "name": "Survival",
+                    "grade": 1
+                }
+            ]
+        }, {
+            "class": "Cleric",
+            "hit_points": 2,
+            "saves": 3,
+            "proficiencies": 2,
+            "abilities": [
+                {
+                    "name": "Spellcasting",
+                    "grade": 4
+                }
+            ]
+        }
+    ]
+}
